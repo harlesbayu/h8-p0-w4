@@ -1,6 +1,6 @@
 The tasks of fourth week
 
-Infroamtion :</br>
+Information :</br>
 [Exercises 1] Angka Prima</br>
 [Exercises 2] Faktor Persekutuan Terbesar</br>
 [Exercises 3] Cari Median</br>
