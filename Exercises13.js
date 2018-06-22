@@ -8,9 +8,12 @@ Barang-barang SALE yang akan dihitung penjualannya:
 + Baju brand Zoro seharga 500000 dan stock barang yang tesedia 2
 + Sweater brand Uniklooh seharga 175000 dan stock barang yang tersedia 1
 
-Function akan menerima array yang berisikan object pembeli (nama pembeli, barang yang ingin dibeli dan jumlah barang yang dibelinya). Jika stock barang kurang dari jumlah yang ingin dibeli oleh pembeli maka pembeli batal untuk membeli barang tersebut.
+Function akan menerima array yang berisikan object pembeli (nama pembeli, barang yang ingin dibeli dan jumlah barang yang 
+dibelinya). Jika stock barang kurang dari jumlah yang ingin dibeli oleh pembeli maka pembeli batal untuk membeli barang tersebut.
 
-Function countProfit akan mengembalikan/me-return sebuah array of object dimana array tersebut berisi objek-objek barang dari toko X tersebut yang berisikan info nama barang, siapa saja yang membeli, sisa stock barang dan total pemasukan untuk barang tersebut
+Function countProfit akan mengembalikan/me-return sebuah array of object dimana array tersebut berisi objek-objek barang 
+dari toko X tersebut yang berisikan info nama barang, siapa saja yang membeli, sisa stock barang dan total pemasukan untuk 
+barang tersebut
 */
 
 function countProfit(shoppers) {
@@ -20,10 +23,10 @@ function countProfit(shoppers) {
                      ];
   
     // you can only write your code here!
-    let all = []
+    let result = []
   
     if(shoppers.length === 0){
-      return all
+      return result
     }
   
     for(let i = 0; i < listBarang.length; i++){
@@ -50,9 +53,9 @@ function countProfit(shoppers) {
         
       }
       
-      all.push(obj)
+      result.push(obj)
     }
-    return all
+    return result
 }
   
   //TEST CASES
