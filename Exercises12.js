@@ -1,6 +1,7 @@
 /*
 Problem
-Diberikan sebuah function shoppingTime(memberId, money) yang menerima dua parameter berupa string dan number. Parameter pertama merupakan memberId dan parameter ke-2 merupakan value uang yang dibawa oleh member tersebut.
+Diberikan sebuah function shoppingTime(memberId, money) yang menerima dua parameter berupa string dan number. Parameter
+pertama merupakan memberId dan parameter ke-2 merupakan value uang yang dibawa oleh member tersebut.
 
 Toko X sedang melakukan SALE untuk beberapa barang, yaitu:
 
@@ -10,11 +11,13 @@ Toko X sedang melakukan SALE untuk beberapa barang, yaitu:
 + Sweater brand Uniklooh seharga 175000
 + Casing Handphone seharga 50000
 
-Buatlah function yang akan mengembalikan sebuah object dimana object tersebut berisikan informasi memberId, money, listPurchased dan changeMoney.
+Buatlah function yang akan mengembalikan sebuah object dimana object tersebut berisikan informasi memberId, money, 
+listPurchased dan changeMoney.
 
 + Jika memberId kosong maka tampilkan "Mohon maaf, toko X hanya berlaku untuk member saja"
 + Jika uang yang dimiliki kurang dari 50000 maka tampilkan "Mohon maaf, uang tidak cukup"
-+ Member yang berbelanja di toko X akan membeli barang yang paling mahal terlebih dahulu dan akan membeli barang-barang yang sedang SALE masing-masing 1 jika uang yang dimilikinya masih cukup.
++ Member yang berbelanja di toko X akan membeli barang yang paling mahal terlebih dahulu dan akan membeli 
+barang-barang yang sedang SALE masing-masing 1 jika uang yang dimilikinya masih cukup.
 
 Contoh jika inputan memberId: '324193hDew2' dan money: 700000
 
