@@ -8,12 +8,16 @@ Barang-barang SALE yang akan dihitung penjualannya:
 + Baju brand Zoro seharga 500000 dan stock barang yang tesedia 2
 + Sweater brand Uniklooh seharga 175000 dan stock barang yang tersedia 1
 
-Function akan menerima array yang berisikan object pembeli (nama pembeli, barang yang ingin dibeli dan jumlah barang yang dibelinya). Jika stock barang kurang dari jumlah yang ingin dibeli oleh pembeli maka pembeli batal untuk membeli barang tersebut.
+Function akan menerima array yang berisikan object pembeli (nama pembeli, barang yang ingin dibeli dan jumlah barang yang 
+dibelinya). Jika stock barang kurang dari jumlah yang ingin dibeli oleh pembeli maka pembeli batal untuk membeli barang tersebut.
 
-Function countProfit akan mengembalikan/me-return sebuah array of object dimana array tersebut berisi objek-objek barang dari toko X tersebut yang berisikan info nama barang, siapa saja yang membeli, sisa stock barang dan total pemasukan untuk barang tersebut
+Function countProfit akan mengembalikan/me-return sebuah array of object dimana array tersebut berisi objek-objek barang 
+dari toko X tersebut yang berisikan info nama barang, siapa saja yang membeli, sisa stock barang dan total pemasukan untuk 
+barang tersebut
 */
 
 function countProfit(shoppers) {
+<<<<<<< HEAD
   let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
                      ['Baju Zoro', 500000, 2],
                      ['Sweater Uniklooh', 175000, 1]
@@ -25,6 +29,37 @@ function countProfit(shoppers) {
   if(shoppers == 0){
     return result
   }
+=======
+    let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
+                       ['Baju Zoro', 500000, 2],         
+                       ['Sweater Uniklooh', 175000, 1]  
+                     ];
+  
+    // you can only write your code here!
+    let result = []
+  
+    if(shoppers.length === 0){
+      return result
+    }
+  
+    for(let i = 0; i < listBarang.length; i++){
+      var obj = {}
+      obj.product   = listBarang[i][0]
+      obj.shoppers  = []
+      obj.leftOver  = listBarang[i][2]
+      obj.totalProfit = 0
+  
+      let remains = listBarang[i][2]
+  
+      for(let j = 0; j < shoppers.length; j++){
+        if(listBarang[i][0] === shoppers[j].product){
+          
+          if(remains >= shoppers[j].amount){
+            obj.shoppers.push(shoppers[j].name)
+            remains = remains - shoppers[j].amount
+  
+            obj.leftOver = remains
+>>>>>>> 3d3cc2291fc371c1bfdd9a135f7fcdf01af142a3
   
   for(let i = 0; i < listBarang.length; i++){
     let customer = {}
@@ -45,10 +80,17 @@ function countProfit(shoppers) {
           customer.totalProfit = (listBarang[i][2] - remains) * listBarang[i][1]
         }
       }
+<<<<<<< HEAD
     }
     result.push(customer)
   }
   return result
+=======
+      
+      result.push(obj)
+    }
+    return result
+>>>>>>> 3d3cc2291fc371c1bfdd9a135f7fcdf01af142a3
 }
   
   //TEST CASES
