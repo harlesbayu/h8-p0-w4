@@ -25,8 +25,3 @@ console.log(checkAB('lane borrowed')); // true
 console.log(checkAB('i am sick')); // false
 console.log(checkAB('you are boring')); // true
 console.log(checkAB('bar barian')); // true
-<<<<<<< HEAD
-console.log(checkAB('bacon and meat')); // false
-=======
-console.log(checkAB('bacon and meat')); // false
->>>>>>> 3d3cc2291fc371c1bfdd9a135f7fcdf01af142a3
