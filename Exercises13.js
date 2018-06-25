@@ -17,7 +17,6 @@ barang tersebut
 */
 
 function countProfit(shoppers) {
-<<<<<<< HEAD
   let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
                      ['Baju Zoro', 500000, 2],
                      ['Sweater Uniklooh', 175000, 1]
@@ -29,7 +28,6 @@ function countProfit(shoppers) {
   if(shoppers == 0){
     return result
   }
-=======
     let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
                        ['Baju Zoro', 500000, 2],         
                        ['Sweater Uniklooh', 175000, 1]  
@@ -59,7 +57,6 @@ function countProfit(shoppers) {
             remains = remains - shoppers[j].amount
   
             obj.leftOver = remains
->>>>>>> 3d3cc2291fc371c1bfdd9a135f7fcdf01af142a3
   
   for(let i = 0; i < listBarang.length; i++){
     let customer = {}
@@ -80,17 +77,14 @@ function countProfit(shoppers) {
           customer.totalProfit = (listBarang[i][2] - remains) * listBarang[i][1]
         }
       }
-<<<<<<< HEAD
     }
     result.push(customer)
   }
   return result
-=======
       
       result.push(obj)
     }
     return result
->>>>>>> 3d3cc2291fc371c1bfdd9a135f7fcdf01af142a3
 }
   
   //TEST CASES
