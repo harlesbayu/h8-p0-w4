@@ -1,12 +1,14 @@
 /*
 Problem
-<<<<<<< HEAD
-Diberikan sebuah function checkAB(str) yang menerima satu parameter berupa string. function tersebut mengembalikan nilai true jika di dalam string tersebut terdapat karakter a dan b yang memiliki jarak 3 karakter lain minimal satu kali. Jika tidak ditemukan sama sekali, kembalikan nilai false.
-=======
+
+Diberikan sebuah function checkAB(str) yang menerima satu parameter berupa string. function tersebut mengembalikan 
+nilai true jika di dalam string tersebut terdapat karakter a dan b yang memiliki jarak 3 karakter lain minimal satu kali. 
+Jika tidak ditemukan sama sekali, kembalikan nilai false.
+
 Diberikan sebuah function checkAB(str) yang menerima satu parameter berupa string. function tersebut mengembalikan nilai 
 true jika di dalam string tersebut terdapat karakter a dan b yang memiliki jarak 3 karakter lain minimal satu kali. 
 Jika tidak ditemukan sama sekali, kembalikan nilai false.
->>>>>>> 3d3cc2291fc371c1bfdd9a135f7fcdf01af142a3
+
 */
 
 function checkAB(num) {
