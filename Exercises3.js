@@ -6,18 +6,18 @@ Diberikan sebuah function cariMedian(arr) yang menerima sebuah array angka. Func
 function cariMedian(arr) {
     // you can only write your code here!
     var panjangNilai = arr.length
-    var test = Math.ceil(panjangNilai / 2)
+    var pembulatan = Math.ceil(panjangNilai / 2)
 
     if(panjangNilai % 2 == 0){
         for(var i = 0; i < panjangNilai; i ++){
-        if(i == test){
-            return (arr[i]+arr[i-1]) / 2
-        }
+          if(i == pembulatan){
+              return (arr[i]+arr[i-1]) / 2
+          }
         }
     }
     else {
         for(var i = 0; i < panjangNilai; i ++){
-        if(i == test){
+        if(i == pembulatan){
             return arr[i-1]
         }
         }

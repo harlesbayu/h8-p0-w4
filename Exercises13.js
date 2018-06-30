@@ -17,82 +17,45 @@ barang tersebut
 */
 
 function countProfit(shoppers) {
-<<<<<<< HEAD
   let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
-                     ['Baju Zoro', 500000, 2],
-                     ['Sweater Uniklooh', 175000, 1]
+                     ['Baju Zoro', 500000, 2],         
+                     ['Sweater Uniklooh', 175000, 1]  
                    ];
 
   // you can only write your code here!
   let result = []
 
-  if(shoppers == 0){
+  if(shoppers.length === 0){
     return result
   }
-=======
-    let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
-                       ['Baju Zoro', 500000, 2],         
-                       ['Sweater Uniklooh', 175000, 1]  
-                     ];
-  
-    // you can only write your code here!
-    let result = []
-  
-    if(shoppers.length === 0){
-      return result
-    }
-  
-    for(let i = 0; i < listBarang.length; i++){
-      var obj = {}
-      obj.product   = listBarang[i][0]
-      obj.shoppers  = []
-      obj.leftOver  = listBarang[i][2]
-      obj.totalProfit = 0
-  
-      let remains = listBarang[i][2]
-  
-      for(let j = 0; j < shoppers.length; j++){
-        if(listBarang[i][0] === shoppers[j].product){
-          
-          if(remains >= shoppers[j].amount){
-            obj.shoppers.push(shoppers[j].name)
-            remains = remains - shoppers[j].amount
-  
-            obj.leftOver = remains
->>>>>>> 3d3cc2291fc371c1bfdd9a135f7fcdf01af142a3
-  
-  for(let i = 0; i < listBarang.length; i++){
-    let customer = {}
-    customer.product = listBarang[i][0]
-    customer.shoppers = []
-    customer.leftOver = listBarang[i][2]
-    customer.totalProfit = 0
 
-    let remains = listBarang[i][2] 
+  for(let i = 0; i < listBarang.length; i++){
+    var obj = {}
+    obj.product   = listBarang[i][0]
+    obj.shoppers  = []
+    obj.leftOver  = listBarang[i][2]
+    obj.totalProfit = 0
+
+    let remains = listBarang[i][2]
+
     for(let j = 0; j < shoppers.length; j++){
       if(listBarang[i][0] === shoppers[j].product){
+        
         if(remains >= shoppers[j].amount){
-          customer.shoppers.push(shoppers[j].name)
+          obj.shoppers.push(shoppers[j].name)
           remains = remains - shoppers[j].amount
 
-          customer.leftOver = remains
+          obj.leftOver = remains
 
-          customer.totalProfit = (listBarang[i][2] - remains) * listBarang[i][1]
-        }
+          obj.totalProfit = (listBarang[i][2] - remains) * listBarang[i][1]
       }
-<<<<<<< HEAD
     }
-    result.push(customer)
   }
-  return result
-=======
-      
-      result.push(obj)
-    }
-    return result
->>>>>>> 3d3cc2291fc371c1bfdd9a135f7fcdf01af142a3
+  result.push(obj)
 }
-  
+return result
+}
+
   //TEST CASES
 console.log(countProfit(
     [
