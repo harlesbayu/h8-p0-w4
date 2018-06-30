@@ -17,6 +17,7 @@ barang tersebut
 */
 
 function countProfit(shoppers) {
+<<<<<<< HEAD
   let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
                      ['Baju Zoro', 500000, 2],         
                      ['Sweater Uniklooh', 175000, 1]  
@@ -52,6 +53,45 @@ function countProfit(shoppers) {
     }
   }
   result.push(obj)
+=======
+    let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
+                       ['Baju Zoro', 500000, 2],         
+                       ['Sweater Uniklooh', 175000, 1]  
+                     ];
+  
+    // you can only write your code here!
+    let result = []
+  
+    if(shoppers.length === 0){
+      return result
+    }
+  
+    for(let i = 0; i < listBarang.length; i++){
+      var obj = {}
+      obj.product   = listBarang[i][0]
+      obj.shoppers  = []
+      obj.leftOver  = listBarang[i][2]
+      obj.totalProfit = 0
+  
+      let remains = listBarang[i][2]
+  
+      for(let j = 0; j < shoppers.length; j++){
+        if(listBarang[i][0] === shoppers[j].product){
+          
+          if(remains >= shoppers[j].amount){
+            obj.shoppers.push(shoppers[j].name)
+            remains = remains - shoppers[j].amount
+  
+            obj.leftOver = remains
+
+            obj.totalProfit = (listBarang[i][2] - remains) * listBarang[i][1]
+        }
+      }
+    }
+    result.push(obj)
+  }
+  return result
+>>>>>>> ee659f5fcf046051910594b2168cda5a0ef7fe99
 }
 return result
 }
